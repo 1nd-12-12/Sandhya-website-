@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>For Sandhya 💗</title>
+  <!-- Google Fonts for Cursive & Clean Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Background Particles (Hearts, Stars, Butterflies, Petals) -->
+  <div id="ambient-bg" aria-hidden="true"></div>
+
+  <!-- Progress Dots -->
+  <nav class="progress-dots" aria-label="Page navigation">
+    <span class="dot active" data-page="0"></span>
+    <span class="dot" data-page="1"></span>
+    <span class="dot" data-page="2"></span>
+    <span class="dot" data-page="3"></span>
+    <span class="dot" data-page="4"></span>
+  </nav>
+
+  <!-- Main App Container -->
+  <main id="app">
+    <!-- PAGE 1: WELCOME TO SANDHYA'S WORLD -->
+    <section class="page active" id="page-1">
+      <div class="glass-card welcome-card">
+        <div class="beating-heart" aria-hidden="true">💗</div>
+        <h1 class="glow-title">WELCOME SANDHYA 💗</h1>
+        <p class="subtitle">Someone special has created a little world just for you...</p>
+        <button class="magic-btn" id="enter-btn">ENTER MY WORLD ✨</button>
+      </div>
+    </section>
+
+    <!-- PAGE 2: SPECIAL MESSAGE -->
+    <section class="page" id="page-2">
+      <div class="glass-card message-card">
+        <div class="floating-hearts-ring" aria-hidden="true">
+          <span>💕</span><span>💖</span><span>🌸</span><span>💗</span>
+        </div>
+        <h2 class="section-title">Just For You 🌷</h2>
+        <div id="typing-container" class="typing-container"></div>
+        <button class="magic-btn hidden" id="to-page-3">CONTINUE ✨</button>
+      </div>
+    </section>
+
+    <!-- PAGE 3: INFINITE COMPLIMENTS -->
+    <section class="page" id="page-3">
+      <div class="glass-card compliments-card">
+        <h2 class="section-title">Endless Reasons 🦋</h2>
+        <div class="marquee-wrapper">
+          <div class="marquee-track" id="marquee-track">
+            <!-- Populated dynamically by script.js for seamless infinite loop -->
+          </div>
+        </div>
+        <button class="magic-btn" id="to-page-4">OPEN YOUR LETTER 💌</button>
+      </div>
+    </section>
+
+    <!-- PAGE 4: A LITTLE LETTER -->
+    <section class="page" id="page-4">
+      <div class="glass-card letter-section-card">
+        <h2 class="section-title">A Little Letter 💌</h2>
+        <p class="tap-hint" id="envelope-hint">Tap the envelope to open</p>
+
+        <div class="envelope-wrapper" id="envelope-wrapper" role="button" tabindex="0" aria-label="Open romantic letter">
+          <div class="envelope" id="envelope">
+            <div class="flap"></div>
+            <div class="pocket"></div>
+            <div class="wax-seal">💗</div>
+            <div class="letter" id="letter">
+              <div class="letter-content">
+                <p class="letter-greeting">Dear Sandhya,</p>
+                <p>
+                  This little website is just a small attempt to make you smile. You deserve beautiful moments, endless happiness and countless reasons to smile. Always keep shining like the brightest star.
+                </p>
+                <p>
+                  Stay happy, stay blessed and never change your beautiful smile.
+                </p>
+                <p class="letter-sign">With lots of love and best wishes. 💗</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="magic-btn hidden" id="to-page-5">ONE LAST SURPRISE 🎁</button>
+      </div>
+    </section>
+
+    <!-- PAGE 5: FINAL SURPRISE -->
+    <section class="page" id="page-5">
+      <div class="glass-card surprise-card">
+        <div id="gift-stage">
+          <h2 class="section-title">A Little Surprise For You, Sandhya 🎁</h2>
+          <div class="gift-box" id="gift-box" role="button" tabindex="0" aria-label="Open gift box">
+            <div class="gift-lid">
+              <div class="gift-bow">🎀</div>
+            </div>
+            <div class="gift-body"></div>
+          </div>
+          <p class="tap-hint">Tap the gift to unwrap!</p>
+        </div>
+
+        <div id="finale-stage" class="hidden">
+          <h1 class="glow-title finale-title">YOU ARE SPECIAL, SANDHYA! 💖</h1>
+          <p class="subtitle">May your life always be filled with magic, laughter, and love.</p>
+          <button class="magic-btn" id="replay-btn">REPLAY THE MAGIC ✨</button>
+        </div>
+      </div>
+      <div id="explosion-layer" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
